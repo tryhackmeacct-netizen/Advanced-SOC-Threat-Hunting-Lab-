@@ -2,6 +2,11 @@ from sigma.processing.pipeline import ProcessingPipeline
 
 # Map common Sigma field names to normalized ECS-like fields used in this project.
 DEFAULT_FIELD_MAPPING = {
+    # Event fields (critical for all rules)
+    "event_id": "event.id",
+    "EventID": "event.id",
+    "event.action": "event.action",
+    "EventType": "event.action",
     # Process fields
     "Image": "process.name",
     "FileName": "process.name",
@@ -24,6 +29,8 @@ DEFAULT_FIELD_MAPPING = {
     "Hostname": "host.name",
     # Windows specifics
     "ServiceName": "service.name",
+    # PowerShell fields
+    "script_block_text": "powershell.script_block_text",
 }
 
 

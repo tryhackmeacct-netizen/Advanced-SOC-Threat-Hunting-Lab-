@@ -1,0 +1,15 @@
+title: Lateral Movement via Remote Execution
+id: lateral-001
+status: experimental
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    event_id: 3
+    event.action: network_connect
+  condition: selection and destination.ip in ("10.0.0.0/8")
+level: high
+tags:
+  - attack.lateral_movement
+  - mitre:T1021

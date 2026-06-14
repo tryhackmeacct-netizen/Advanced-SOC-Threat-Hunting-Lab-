@@ -1,0 +1,14 @@
+title: Persistence via Scheduled Task or Run Key
+id: persistence-001
+status: experimental
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    event_id: 4698
+  condition: selection
+level: high
+tags:
+  - attack.persistence
+  - mitre:T1053

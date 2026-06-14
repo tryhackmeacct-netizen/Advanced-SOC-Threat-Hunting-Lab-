@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core import db as db_core
-from app.api.routers import alerts, incidents, iocs, detection_rules, ingest
+from app.api.routers import alerts, incidents, iocs, detection_rules, ingest, detections
 
 app = FastAPI(title="Advanced SOC Threat Hunting Lab - Backend")
 
@@ -31,3 +31,4 @@ app.include_router(incidents.router, prefix="/api/incidents", tags=["incidents"]
 app.include_router(iocs.router, prefix="/api/iocs", tags=["iocs"])
 app.include_router(detection_rules.router, prefix="/api/detection-rules", tags=["detection_rules"])
 app.include_router(ingest.router, prefix="/api/ingest", tags=["ingest"])
+app.include_router(detections.router, prefix="/api/detections", tags=["detections"])

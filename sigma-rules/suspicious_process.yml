@@ -1,0 +1,15 @@
+title: Suspicious Process Execution
+id: susp-proc-001
+status: experimental
+logsource:
+  product: windows
+  service: sysmon
+detection:
+  selection:
+    event_id: 1
+    process.name: "mimikatz.exe"
+  condition: selection
+level: critical
+tags:
+  - attack.execution
+  - mitre:T1059

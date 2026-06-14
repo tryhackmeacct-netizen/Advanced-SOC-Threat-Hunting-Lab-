@@ -1,0 +1,15 @@
+title: PowerShell Encoded Download and Execute
+id: ps-abuse-001
+status: experimental
+logsource:
+  product: windows
+  service: powershell
+detection:
+  selection:
+    event_id: 4104
+    script_block_text|contains: "IEX"
+  condition: selection
+level: high
+tags:
+  - attack.execution
+  - mitre:T1059.001

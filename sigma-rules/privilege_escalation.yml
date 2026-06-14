@@ -1,0 +1,14 @@
+title: Privilege Escalation Suspicious Token
+id: priv-esc-001
+status: experimental
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    event_id: 4672
+  condition: selection
+level: high
+tags:
+  - attack.privilege_escalation
+  - mitre:T1068

@@ -1,0 +1,14 @@
+title: Account Enumeration via Account Lookups
+id: acct-enum-001
+status: experimental
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    event_id: 4720
+  condition: selection
+level: medium
+tags:
+  - attack.discovery
+  - mitre:T1087

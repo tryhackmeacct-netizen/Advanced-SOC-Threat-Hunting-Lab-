@@ -1,0 +1,14 @@
+title: Windows Failed Logon Brute Force
+id: bf-windows-001
+status: experimental
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    event_id: 4625
+  condition: selection and count(selection) by source.ip > 5
+level: high
+tags:
+  - attack.bruteforce
+  - mitre:T1110

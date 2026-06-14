@@ -1,3 +1,17 @@
+# Advanced SOC Threat Hunting Lab (Phase 1 scaffold)
+
+This repository contains a staged build of an Advanced SOC & Threat Hunting Lab. Phase 1 scaffolds a Docker Compose stack and a minimal FastAPI backend with MongoDB integration and CRUD endpoints for Alerts, Incidents, IOCs, and DetectionRules.
+
+To start the Phase 1 stack locally:
+
+1. Copy `.env.example` to `.env` and adjust values as needed.
+2. Run:
+
+```bash
+docker-compose up --build
+```
+
+The backend API will be available at `http://localhost:8000` and health at `http://localhost:8000/health`.
 Advanced SOC Threat Hunting Lab (MVP scaffold)
 
 This repository contains a minimal scaffold for the Advanced SOC Threat Hunting Lab. It includes a small FastAPI backend MVP and a frontend stub so you can get a working demo quickly.

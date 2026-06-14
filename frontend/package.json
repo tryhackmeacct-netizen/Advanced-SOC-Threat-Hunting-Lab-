@@ -1,0 +1,8 @@
+{
+  "name": "advanced-soc-frontend-stub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Frontend stub: implement React/Vue app here\" && exit 0"
+  }
+}

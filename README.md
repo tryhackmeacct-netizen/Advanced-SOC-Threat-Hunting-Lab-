@@ -1,55 +1,117 @@
-# Advanced SOC Threat Hunting Lab (Phase 1 scaffold)
+# Advanced SOC Threat Hunting Lab
 
-This repository contains a staged build of an Advanced SOC & Threat Hunting Lab. Phase 1 scaffolds a Docker Compose stack and a minimal FastAPI backend with MongoDB integration and CRUD endpoints for Alerts, Incidents, IOCs, and DetectionRules.
+A modular, incremental build of a Security Operations Center (SOC) platform demonstrating real-world threat detection, enrichment, and response workflows.
 
-To start the Phase 1 stack locally:
+## Current Status
 
-1. Copy `.env.example` to `.env` and adjust values as needed.
-2. Run:
+**Phase 3: Detection Engine & pySigma Integration** ✅ COMPLETE
+- Sigma rule parsing and conversion (pySigma + custom field mapping)
+- Detection engine with dry-run support (8 detection rules validated)
+- Automated alert generation and MongoDB persistence
+- Legacy predicate fallback for rules with correlation conditions
+- Comprehensive test suite with parity validation (8/8 rules matched)
+
+**Phase 4: MITRE ATT&CK Mapping & SOC Dashboard** 🔄 IN PROGRESS
+
+## Quick Start
+
+### Prerequisites
+- Python 3.11+
+- Docker & Docker Compose (for OpenSearch/MongoDB)
+
+### Setup (Backend)
 
 ```bash
-docker-compose up --build
-```
-
-The backend API will be available at `http://localhost:8000` and health at `http://localhost:8000/health`.
-Advanced SOC Threat Hunting Lab (MVP scaffold)
-
-This repository contains a minimal scaffold for the Advanced SOC Threat Hunting Lab. It includes a small FastAPI backend MVP and a frontend stub so you can get a working demo quickly.
-
-Quick start (backend):
-
-1. Create a virtual environment and install dependencies
-
-```powershell
+# Create virtual environment
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1  # Windows
+
+# Install dependencies
 pip install -r backend/requirements.txt
 ```
 
-2. Run the API
+### Run Detection Engine (Dry-Run)
 
-```powershell
-uvicorn backend.main:app --reload --port 8000
+```bash
+# Validate all 8 rules match sample events
+python backend/tests/test_sigma_pysigma_integration.py
 ```
 
-The API exposes simple in-memory endpoints for `incidents`, `iocs`, and `detections` for early demoing.
-
-Next steps:
-- Wire MongoDB models and CRUD
-- Add frontend SOC overview dashboard
-- Add sample Sigma and Wazuh rules
-- Add CI and instructions to push to GitHub
-
-To push this scaffold to your GitHub repository, run the commands in the `Pushing` section below.
-
-Pushing (example):
-
-```powershell
-cd "c:/Users/Sanket/SOC PROject/Advanced-SOC-Threat-Hunting-Lab"
-git init
-git add .
-git commit -m "Initial scaffold: FastAPI MVP"
-git remote add origin https://github.com/tryhackmeacct-netizen/Advanced-SOC-Threat-Hunting-Lab-
-git branch -M main
-git push -u origin main
+Expected output:
 ```
+legacy_matches_count 8
+Parity OK: legacy predicate matched all 8 rules
+```
+
+## Architecture
+
+```
+backend/
+  app/
+    core/
+      config.py           # pydantic v2 BaseSettings
+    services/
+      detection_engine.py # Rule execution, alert generation
+      sigma_converter.py  # pySigma integration + fallback
+      sigma_pipeline.py   # Field mapping, processing pipeline
+  tests/
+    test_sigma_pysigma_integration.py  # Parity validation
+sigma-rules/
+  *.yml                   # 8 sample Sigma detection rules
+sample-logs/
+  mixed_events.json       # Synthetic test events
+```
+
+## Phase 3: pySigma Integration Summary
+
+### Field Mapping (sigma_pipeline.py)
+Maps Sigma-native field names to normalized ECS-like fields:
+
+```python
+{
+    "event_id": "event.id",           # Critical for all 8 rules
+    "Image": "process.name",
+    "CommandLine": "process.command_line",
+    "TargetUserName": "user.name",
+    ...
+}
+```
+
+### Known Limitations
+
+**pySigma Lucene Backend:**
+- Correlation conditions (e.g., `count(selection) by source.ip > 5`) cannot be converted to Lucene queries
+- **Workaround:** Falls back to legacy Python predicate matching (guarantees 100% coverage)
+- All 8 sample rules validated with 8/8 parity via predicate fallback
+
+**Test Results:**
+- ✅ parity_test.py: 8/8 rules matched (legacy predicate baseline)
+- ✅ Field mapping: event_id, event.action, script_block_text added
+- ✅ Pydantic v2 compatibility: BaseSettings imported from pydantic_settings
+
+## Testing
+
+```bash
+# Parity validation (predicate vs pySigma)
+python backend/tests/test_sigma_pysigma_integration.py
+
+# Diagnostic: inspect pySigma conversions for brute_force_windows.yml
+python scripts/comprehensive_diagnostic.py
+
+# Scan all rules for field usage across 8 rules
+python scripts/scan_all_fields.py
+```
+
+## Phase 4: Next Steps
+
+1. MITRE ATT&CK coverage mapping (tactic/technique heatmap)
+2. Threat intelligence enrichment (VirusTotal API, IOC database)
+3. SOC dashboard with detection analytics
+4. Incident response automation playbooks
+
+## References
+
+- [Sigma Rules](https://github.com/SigmaHQ/sigma)
+- [pySigma](https://github.com/SigmaHQ/pySigma)
+- [MITRE ATT&CK](https://attack.mitre.org/)
+- [ECS Fields](https://www.elastic.co/guide/en/ecs/current/index.html)
